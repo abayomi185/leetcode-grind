@@ -1,0 +1,6 @@
+[package]
+name = "leetcode_grind"
+version = "0.1.0"
+edition = "2021"
+authors = ["Yomi <yomi@yomitosh.com>"]
+readme = "README.md"
