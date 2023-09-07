@@ -1,0 +1,3 @@
+mod solutions {
+    mod easy;
+}
