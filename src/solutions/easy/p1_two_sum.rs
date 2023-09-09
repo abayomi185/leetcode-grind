@@ -30,7 +30,7 @@ fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
 }
 
 #[test]
-fn test() {
+fn test_two_sum() {
     type TwoSumInputType = (Vec<i32>, i32);
     let test_cases: [(TwoSumInputType, Vec<i32>); 3] = [
         ((vec![2, 7, 11, 15], 9), vec![0, 1]),

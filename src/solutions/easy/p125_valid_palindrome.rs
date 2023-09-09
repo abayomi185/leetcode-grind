@@ -31,7 +31,7 @@ fn is_palindrome(s: String) -> bool {
 }
 
 #[test]
-fn test() {
+fn test_valid_palindrome() {
     let test_cases: [(String, bool); 3] = [
         (String::from("A man, a plan, a canal: Panama"), true),
         (String::from("race a car"), false),

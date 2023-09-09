@@ -13,7 +13,7 @@ fn contains_duplicate(nums: Vec<i32>) -> bool {
 }
 
 #[test]
-fn test() {
+fn test_contains_duplicate() {
     let test_cases: [(Vec<i32>, bool); 3] = [
         (vec![1, 2, 3, 1], true),
         (vec![1, 2, 3, 4], false),

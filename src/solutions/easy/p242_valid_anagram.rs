@@ -23,7 +23,7 @@ fn is_anagram(s: String, t: String) -> bool {
 }
 
 #[test]
-fn test() {
+fn test_valid_anagram() {
     let test_cases: [((&str, &str), bool); 2] =
         [(("anagram", "nagaram"), true), (("rat", "car"), false)];
 
