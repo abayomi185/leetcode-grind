@@ -1,3 +1,13 @@
+/*
+Leetcode: https://leetcode.com/problems/valid-palindrome/
+
+Progression
+1. Started with 2 separate pointers for left and right. Doing alphanumeric checks first,
+then comparing the left and right char
+
+2. Functional way filtering out non-alphanumeric characters and making sure to lowercase all characters (missed this many times)
+the comparing the reverse of the vec, adhering to Rust borrow checking rules
+*/
 #[cfg(test)]
 fn is_palindrome(s: String) -> bool {
     // let chars: Vec<char> = s.chars().flat_map(|x| x.to_lowercase()).collect();

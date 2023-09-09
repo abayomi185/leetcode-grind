@@ -1,8 +1,12 @@
-// I'd say this method is okay
-//
-// Another thing that could be done is sorting the nums array first then using two pointers, one
-// from the left and the other from the right
-//
+/*
+Leetcode: https://leetcode.com/problems/two-sum/
+
+This implementation is okay
+
+Improvements
+1. Another thing that could be done is sorting the nums array first then using two pointers, one
+from the left and the other from the right
+*/
 #[cfg(test)]
 fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
     use std::collections::HashMap;
