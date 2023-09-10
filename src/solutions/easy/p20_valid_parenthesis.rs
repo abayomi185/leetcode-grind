@@ -1,5 +1,10 @@
 /*
 Leetcode: https://leetcode.com/problems/valid-parenthesis/
+
+Progression
+1. Using HashMap to check the opening pair
+
+2. Putting all chack in match such that a lookup is not required
 */
 #[cfg(test)]
 fn is_valid(s: String) -> bool {
