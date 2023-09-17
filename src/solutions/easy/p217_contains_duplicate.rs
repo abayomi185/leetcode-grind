@@ -23,7 +23,7 @@ fn test_contains_duplicate() {
         (vec![1, 1, 1, 3, 3, 4, 3, 2, 4, 2], true),
     ];
 
-    for (nums, want) in test_cases {
-        assert_eq!(contains_duplicate(nums), want);
+    for (case, want) in test_cases {
+        assert_eq!(contains_duplicate(case), want);
     }
 }

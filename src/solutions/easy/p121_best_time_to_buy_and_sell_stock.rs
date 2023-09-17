@@ -11,6 +11,7 @@ Utilising a max value in the vector as with the 1st attempt.
 Improvements
 1. Use the fold method on the vec, which is like a reduce in JS.
 */
+// TODO:
 #[cfg(test)]
 fn max_profit(prices: Vec<i32>) -> i32 {
     let mut lowest_price: i32 = prices[0];
