@@ -6,6 +6,7 @@ pub struct ListNode {
 }
 impl ListNode {
     #[inline]
+    #[allow(dead_code)]
     fn new(val: i32) -> Self {
         ListNode { next: None, val }
     }
@@ -21,6 +22,8 @@ pub fn reverse_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         prev = Some(boxed_node);
     }
     prev
+
+    // A fold may also be used
 }
 
 #[test]
