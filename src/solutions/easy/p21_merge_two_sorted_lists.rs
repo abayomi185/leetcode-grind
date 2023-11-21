@@ -1,16 +1,5 @@
-// Definition for singly-linked list.
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
-}
-impl ListNode {
-    #[inline]
-    #[allow(dead_code)]
-    fn new(val: i32) -> Self {
-        ListNode { next: None, val }
-    }
-}
+#[cfg(test)]
+use crate::helpers::linked_list::ListNode;
 
 #[cfg(test)]
 pub fn merge_two_sorted_lists(
