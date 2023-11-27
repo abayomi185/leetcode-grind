@@ -46,6 +46,7 @@ fn test_linked_list_cycle() {
         let expected_value = case.1;
 
         // WARN: Leetcode does not have Rust implementation
+        debug_assert!(false, "Leetcode does not have Rust implementation");
         // assert_eq!(linked_list_cycle(list_nodes), expected_value);
     }
 }
