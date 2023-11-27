@@ -1,4 +1,3 @@
-pub mod jack;
 pub mod p121_best_time_to_buy_and_sell_stock;
 pub mod p125_valid_palindrome;
 // pub mod p141_linked_list_cycle;
@@ -7,4 +6,5 @@ pub mod p206_reverse_linked_list;
 pub mod p20_valid_parenthesis;
 pub mod p217_contains_duplicate;
 pub mod p21_merge_two_sorted_lists;
+pub mod p226_invert_binary_tree;
 pub mod p242_valid_anagram;
