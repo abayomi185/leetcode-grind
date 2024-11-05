@@ -4,3 +4,6 @@ version = "0.1.0"
 edition = "2021"
 authors = ["Yomi <yomi@yomitosh.com>"]
 readme = "README.md"
+
+[lib]
+path = "rust/lib.rs"

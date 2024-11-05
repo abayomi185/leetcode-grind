@@ -5,13 +5,16 @@ Leetcode: https://leetcode.com/problems/contains-duplicate/
 fn contains_duplicate(nums: Vec<i32>) -> bool {
     use std::collections::HashSet;
 
-    let mut num_set = HashSet::new();
+    let mut num_set: HashSet<i32> = HashSet::new();
+
     for num in nums {
         if num_set.contains(&num) {
             return true;
         }
         num_set.insert(num);
     }
+
+    // num_set.len() != nums.len()
     false
 }
 
