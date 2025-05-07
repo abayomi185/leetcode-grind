@@ -1,9 +1,9 @@
-from dataclasses import dataclass
-from typing import Any
+from dataclasses import dataclass, field
+from typing import Any, Optional
 
 
 @dataclass
 class TestCase:
-    input: Any
-    target: Any
-    expected: Any
+    input: Optional[Any] = field(default=None)
+    target: Optional[Any] = field(default=None)
+    expected: Optional[Any] = field(default=None)
