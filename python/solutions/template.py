@@ -1,5 +1,8 @@
 """
 Leetcode: https://leetcode.com/problems/problem_name/
+
+# Use vim to replace all occurrences of problem_name with the actual problem name
+s/problem_name/
 """
 
 from utils import TestCase
