@@ -2,6 +2,8 @@
 Leetcode: https://leetcode.com/problems/two-sum/
 """
 
+from utils import TestCase
+
 
 def two_sum(nums, target):
     num_to_index = {}
@@ -15,10 +17,11 @@ def two_sum(nums, target):
 
 def test_two_sum():
     test_cases = [
-        ([2, 7, 11, 15], 9, [0, 1]),
-        ([3, 2, 4], 6, [1, 2]),
-        ([3, 3], 6, [0, 1]),
+        TestCase(input=([2, 7, 11, 15], 9), expected=[0, 1]),
+        TestCase(input=([3, 2, 4], 6), expected=[1, 2]),
+        TestCase(input=([3, 3], 6), expected=[0, 1]),
     ]
 
-    for nums, target, expected in test_cases:
-        assert two_sum(nums, target) == expected
+    for case in test_cases:
+        assert case.input is not None
+        assert two_sum(case.input[0], case.input[1]) == case.expected
