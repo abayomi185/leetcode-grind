@@ -37,11 +37,12 @@ def valid_anagram_2(s: str, t: str):
 
 def test_valid_anagram():
     test_cases: list[TestCase] = [
-        TestCase(input="racecar", target="carrace", expected=True),
-        TestCase(input="jar", target="jam", expected=False),
-        TestCase(input="aa", target="bb", expected=False),
+        TestCase(input=("racecar", "carrace"), expected=True),
+        TestCase(input=("jar", "jam"), expected=False),
+        TestCase(input=("aa", "bb"), expected=False),
     ]
 
     for case in test_cases:
-        assert valid_anagram(str(case.input), str(case.target)) == case.expected
-        assert valid_anagram_2(str(case.input), str(case.target)) == case.expected
+        assert case.input is not None
+        assert valid_anagram(str(case.input[0]), str(case.input[1])) == case.expected
+        assert valid_anagram_2(str(case.input[0]), str(case.input[1])) == case.expected
