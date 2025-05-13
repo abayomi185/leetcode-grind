@@ -1,4 +1,5 @@
 from solutions.easy.p1_two_sum import test_two_sum
+from solutions.easy.p20_valid_parenthesis import test_valid_parenthesis
 from solutions.easy.p121_best_time_to_buy_and_sell_stock import (
     test_best_time_to_buy_and_sell_stock,
 )
@@ -13,3 +14,4 @@ def test_all_easy():
     test_two_sum()  # P2
     test_valid_anagram()  # P242
     test_valid_palindrome()  # P125
+    test_valid_parenthesis()  # P20
