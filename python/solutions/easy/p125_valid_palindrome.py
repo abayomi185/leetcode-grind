@@ -22,6 +22,9 @@ def test_valid_palindrome():
     test_cases: list[TestCase] = [
         TestCase(input="Was it a car or a cat I saw?", expected=True),
         TestCase(input="tab a cat", expected=False),
+        TestCase(input="A man, a plan, a canal: Panama", expected=True),
+        TestCase(input="race a car", expected=False),
+        TestCase(input=" ", expected=True),
     ]
 
     for case in test_cases:
